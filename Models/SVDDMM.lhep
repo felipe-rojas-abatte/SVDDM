@@ -1,0 +1,39 @@
+% Standard Model + Vector Doublet - unitary and t'Hooft-Feynman gauges.
+
+option chepPDWidth=200.
+
+keys gauge_fixing=Feynman.
+keys CKMdim=1.
+use SM_SVDDM_tex.
+
+do_if gauge_fixing==Feynman.
+    model 'SM+SVDDM(tFG)'/1.
+do_else_if gauge_fixing==unitary.
+    model 'SM+SVDDM(UG)'/2.
+do_else.
+    write('Error: the key "gauge" should be either "Feynman" or "unitary".').
+    quit.
+end_if.
+
+option ReduceGamma5=0.
+let g5=gamma5.
+
+read a_svddm_var.      % parameters of the model
+read b_svddm_prt.      % set of particles
+read c_svddm_let.      % multiplets
+read d_svddm_gfi.     % gauge fields interaction
+read e_svddm_gsmi.     % higgs sector
+read f_svddm_gmi.     % gauge-fermionic matter interaction
+read g_svddm_yuk.     % yukawa interactions	
+read h_svddm_fpg.     % Faddeev-Popov ghosts
+read i_svddm_new.     % new sector
+%read j_vddm_loop.    % loop vertex HGG and HAA.
+read j_svddm_loop_new.    % loop vertex HGG and HAA.
+%read j_vddm_loop_new2.    % loop vertex HGG and HAA.
+
+
+SetAngle(1-SW**2=CW**2).
+SetEM(A,EE).
+CheckHerm.
+CheckMasses.
+
