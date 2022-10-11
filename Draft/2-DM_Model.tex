@@ -1,0 +1,71 @@
+\section{The Model} \label{DMM}
+In this work we introduce a multicomponent dark matter sector which comes from a vector doublet field $V_{\mu}$ in the fundamental representation of $SU(2)_L$ and an additional scalar singlet $S$. The new vector is odd under a discrete symmetry $Z_2$ and the new real scalar is odd under another discrete symmetry $Z_2'$ which prevents that $S$ acquires a vacuum expectation value after the EWSB. All the SM fields are even under both symmetries $Z_2$ and $Z_2'$. The Lagrangian up to renormalizable level would be
+\begin{equation}
+{\cal L} = {\cal L}_{\text{SM}} + \frac{1}{2}\left|\partial_{\mu} S\right|^2 + {\cal L}_{\text{V}} + {\cal L}_{\phi\text{V}} + {\cal L}_{\text{VS}} - V(\phi, S) \label{Lagrangian}
+\end{equation}
+where the ${\cal L}_{\text{SM}}$ consider all the known field with the exception of the Higgs potential and $\frac{1}{2}\left|\partial_{\mu} S\right|^2$ is the kinetical term for the scalar field $S$. ${\cal L}_{\text{V}}$ is the vector dark sector given by
+\begin{eqnarray}
+{\cal L}_{\text{V}} &=& -\frac{1}{2}\left(D_{\mu} V_{\nu} - D_{\nu} V_{\mu} \right)^{\dagger} \left(D^{\mu} V^{\nu} - D^{\nu} V^{\mu} \right) + m_V^2 \vdag[\mu] V^{\mu} - \alpha_2 (\vdag[\mu] V^{\mu}) (\vdag[\nu] V^{\nu}) \nonumber \\
+&-& \alpha_3 (\vdag[\mu] V^{\nu}) (\vdag[\nu] V^{\mu}) + i\frac{g'}{2}\kappa_1 V_\mu^\dagger B^{\mu\nu} V_\nu + ig\kappa_2V_\mu^\dagger W^{\mu\nu} V_\nu
+\end{eqnarray}
+${\cal L}_{\phi\text{V}}$ is the interaction sector between the dark vector and the Higgs field
+\begin{eqnarray}
+{\cal L}_{\phi\text{V}} &=& - \lambda_2(\phidag \phi) (\vdag[\mu]V^{\mu}) - \lambda_3(\phidag V_{\mu})(\Vdag[\mu]\phi) - \frac{\lambda_4}{2} \left[(\phidag V_{\mu})(\phidag V^{\mu}) + (\Vdag[\mu]\phi)(\vdag[\mu]\phi)\right]
+\end{eqnarray}
+${\cal L}_{\text{VS}}$ is the interaction sector between the dark vector and the dark scalar field
+\begin{eqnarray}
+{\cal L}_{\text{VS}} &=& - \lambda_{SV}S^2 V_{\mu}^{\dagger}V^{\mu}
+\end{eqnarray}
+and finally $V(\phi, S)$ is the potential of the model given by
+\begin{eqnarray}
+V(\phi, S) &=& -m_{\phi}^2\phi^{\dagger}\phi + \ld[\phi](\phi^{\dagger}\phi)^2 + \frac{m_{S}^2}{2}S^2 + \frac{\lambda_S}{4}S^4 + \lambda_{\phi S}\phi^{\dagger}\phi S^2
+\end{eqnarray}
+
+%\begin{eqnarray} 
+%{\cal L} &=& -\frac{1}{2}\left(D_{\mu} V_{\nu} - D_{\nu} V_{\mu} \right)^{\dagger} \left(D^{\mu} V^{\nu} - D^{\nu} V^{\mu} \right) + M_V^2 \vdag[\mu] V^{\mu} - \alpha_2 (\vdag[\mu] V^{\mu}) (\vdag[\nu] V^{\nu}) \nonumber \\
+%&-& \alpha_3 (\vdag[\mu] V^{\nu}) (\vdag[\nu] V^{\mu}) - \lambda_2(\phidag \phi) (\vdag[\mu]V^{\mu}) - \lambda_3(\phidag V_{\mu})(\Vdag[\mu]\phi) \nonumber \\
+%&-& \nonumber \frac{\lambda_4}{2} \left[(\phidag V_{\mu})(\phidag V^{\mu}) + (\Vdag[\mu]\phi)(\vdag[\mu]\phi)\right] + i\frac{g'}{2} V_\mu^\dagger B^{\mu\nu} V_\nu + igV_\mu^\dagger W^{\mu\nu} V_\nu \nonumber \\
+% &+& \frac{1}{2}\left|\partial_{\mu} S\right|^2 - \frac{\lambda_S}{4}S^4 + \frac{M_{oS}^2}{2}S^2 - \lambda_{\phi S}\phi^{\dagger}\phi S^2 - \lambda_{SV}S^2 V_{\mu}^{\dagger}V^{\mu}  \label{DM-Lagrangian}
+%\end{eqnarray}
+%We need to take into account new constraint from the stability of the potential, however this new scalar can help to reach the DM budget into the region between $62.5< \Mv[1] < 840$ GeV. We only have 4 new free parameter: $\lambda_S$ of self interaction, $M_S$ a mass parameter and 2 new quartic couplings ($\lambda_{SV}, \lambda_{\phi S}$) which connects the new scalar with the vector doublet and the SM Higgs respectively.
+
+The Lagrangian \ref{Lagrangian} contain 10 free parameters\footnote{We assume that all the free parameters are real, otherwise, the new vector sector may introduce CP-violation sources. In this work we do not deal with that interesting possibility.} which we labeled as $\ld[2], \ld[3], \ld[4]$ for quartic coupling involving interactions between SM-Higgs field and the dark vector field, $\ld[S]$ for self interaction quartic coupling of the scalar $S$, $\ld[\phi S]$ and $\ld[SV]$ for quartic coupling involving interactions between SM-Higgs field and the new scalar as well the vector field respectively, two mass terms $m_V$ and $m_S$, and $\alpha_2, \alpha_3$ for quartic couplings of pure interactions among the vector fields. 
+%These latter self-interacting terms are not relevant for the experimental constraints and dark matter phenomenology done in this paper, therefore from now on we will not consider them, However, self-interacting particle dark matter can be relevant in related fields such as astrophysical structures \cite{Tulin:2017ara}.
+
+After the electroweak Symmetry Breaking, the tree level mass spectrum of the new sector is
+\begin{eqnarray}
+M^2_{S} &=& 2m_S^2 - v^2\ld[\phi S] \label{MassS}\\
+M^2_{V^{\pm}} &=& \frac{1}{2}\left[2m_V^2 - v^2 \lambda_2 \right], \label{MassVc}\\
+M^2_{V^1} &=& \frac{1}{2}\left[2m_V^2 - v^2(\lambda_2 + \lambda_3 + \lambda_4)\right], \label{MassV1}\\
+M^2_{V^2} &=& \frac{1}{2}\left[2m_V^2 - v^2(\lambda_2 + \lambda_3 - \lambda_4)\right],  \label{MassV2}
+\end{eqnarray}
+The term proportional to $\lambda_4$ makes the splitting between the physical masses of the two neutral states. For phenomenological proposes we will work in a different base of free parameters
+\begin{equation}
+\Mv[1], \quad \Mv[2], \quad \Mvc, \quad M_{S}, \quad \lamL, \quad \ld[\phi S], \quad \ld[SV], \quad \ld[S], \quad \alpha_1 \quad \alpha_2 \label{parameters}
+\end{equation} 
+where $\lamL=\ld[2]+\ld[3]+\ld[4]$ is, as we will see, the effective coupling controlling  the interaction between the SM Higgs and $V^1$.
+
+It is convenient to write  the quartic coupling and the mass parameters as a function of the new free parameters
+\begin{eqnarray} 
+\nonumber &\displaystyle \ld[2] = \ld[L] + 2\frac{\left(\Mv[1]^2-\Mvc^2\right)}{v^2},  \qquad  \displaystyle \ld[3] = \frac{2\Mvc^2 - \Mv[1]^2 - \Mv[2]^2}{v^2},& \\
+&\displaystyle \ld[4] = \frac{\Mv[2]^2 - \Mv[1]^2}{v^2}, \qquad \displaystyle m_V^2 = \Mv[1]^2 + \frac{v^2\ld[L]}{2}, \qquad \displaystyle m_S^2 = \frac{M_S^2 + v^2\ld[\phi S]}{2}.&  \label{lambda-couplings}
+\end{eqnarray}
+For future convenience, it will be useful to introduce
+\begin{eqnarray}\label{eq:lamR}
+ \lambda_R \equiv \ld[2]+\ld[3]-\ld[4] = \lambda_L + \frac{2\left(M_{V^2}^2 - M_{V^1}^2\right)}{v^2},
+\end{eqnarray}
+which is not a new free parameter, but it is the effective coupling constant which governs the $HV^2V^2$ interaction.
+
+It is important to mention that because the new vector field have the same quantum numbers than the SM-Higgs field, the two neutral vectors have opposite CP-parities. However we can switch their parity just making a change of bases $V_{\mu}\rightarrow iV_{\mu}$ and then re-label each field as $V^1_{\mu} \rightarrow V^2_{\mu}$ and $V^2_{\mu} \rightarrow V^1_{\mu}$ and still obtaining the same phenomenology. Therefore, without loose of generality, we will choose $V^1_{\mu}$ as the LOP turning it into our Dark Matter candidate. Following the same line, to make sure that $V^1_{\mu}$ is the lightest state of the new sector, we can find some restrictions that the quartic couplings must follow to satisfy this condition. Considering this we can stress that
+\begin{eqnarray}
+\nonumber \Mv[2]^2 - \Mv[1]^2 > 0  \qquad & \Rightarrow &\ld[4] > 0, \\
+\Mvc^2 - \Mv[1]^2 > 0 \qquad & \Rightarrow &\ld[3] + \ld[4] > 0 .
+\end{eqnarray}
+In order to have a weakly interacting model, we set that all the couplings parameters must to satisfy
+\begin{equation}
+|\lambda_i| < 4 \pi  \quad \wedge \quad |\alpha_j| < 4 \pi \qquad (i=2,3,4;\quad j=2,3). \label{pert}
+\end{equation} 
+
+We implemented this model using the \texttt{LanHEP}\cite{Semenov:2010qt} package  and we used \texttt{CalcHEP}\cite{Belyaev:2012qa} and \texttt{micrOMEGAs}\cite{Belanger:2013oya, Belanger:2006is, Belanger:2010gh} for collider and DM phenomenology calculations, respectively. 
+
+
